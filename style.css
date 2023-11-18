@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.card {
+    background-color: #08AEEA;
+    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+    width: 85%;
+    max-width: 450px;
+    margin: 5rem auto 0;
+    border-radius: 20px;
+    padding: 2rem 1rem;
+}
+
+.search {
+    position: relative;
+}
+
+.search input {
+    width: 100%;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+.fa-location-dot {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 1.5rem;
+    color: #41A95B;
+}
+
+.fa-magnifying-glass {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.5rem;
+}
+
+.weather {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.temp {
+    font-size: 5rem;
+    font-weight: 500;
+    margin-top: -1rem;
+}
+
+.city {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: -1rem;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 2.5rem;
+    margin: 2rem .8rem 2rem 0;
+}
+
+.humidity, .wind {
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 792px) {
+    .card {
+        margin: 4rem auto;
+    }
+
+    .weather img {
+        width: 50%;
+    }
+
+    .temp {
+        font-size: 3.5rem;
+    }
+
+    .city {
+        font-size: 2rem;
+        font-weight: 400;
+        margin-top: -1rem;
+    }
+
+    .details {
+        padding: 0 .5rem;
+        gap: 1rem;
+        justify-content: space-around;
+    }
+
+    .col img {
+        width: 1.8rem;
+        margin: 1rem .4rem 1rem 0;
+    }
+
+    .ortak {
+        font-size: .7rem;
+    }
+    
+    .humidity, .wind {
+        font-size: 1rem;
+    }
+}
