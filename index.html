@@ -13,35 +13,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="card">
+    <div class="container">
         <div class="search">
-            <i class="fa-solid fa-location-dot"></i>
-            <input type="text" placeholder="Enter Your City" spellcheck="false">
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-location-dot" id="location"></i>
+            <input type="text" placeholder="Enter Your City" spellcheck="false" id="input" autocomplete="off">
+            <i class="fa-solid fa-magnifying-glass" id="btn"></i>
         </div>
         <div class="weather">
-            <img src="./images/rain.png" alt="">
-            <h1 class="temp">22°C</h1>
-            <h2 class="city">Samsun</h2>
+            <img src="./images/rain.png" class="weather-img">
+            <h1 class="temp">...</h1>
+            <h2 class="city">...</h2>
             <div class="details">
                 <div class="col">
                     <img src="./images/humidity.png">
                     <div>
-                        <p class="humidity">50%</p>
+                        <p class="humidity">...</p>
                         <p class="ortak">Humidity</p>
                     </div>
                 </div>
                 <div class="col">
                     <img src="./images/wind.png">
                     <div>
-                        <p class="wind">15 km/h</p>
+                        <p class="wind">...</p>
                         <p class="ortak">Wind Speed</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <script src="app.js"></script>
 </body>
 </html>
