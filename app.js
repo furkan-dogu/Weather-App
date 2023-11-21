@@ -14,13 +14,13 @@ const checkWeather = async (city) => {
         const res = await fetch(`${apiUrl}${city}&appid=${apiKey}`);
         
         const data = await res.json();
+        console.log(data);
         cities = data;
-        
         if (data.name.includes("Province")) {
             data.name = data.name.replace("Province", "").trim();
         }
 
-        document.querySelector(".city").textContent = `${data.name}`;
+        document.querySelector(".city").textContent = `${data.name}, ${data.sys.country}`;
         document.querySelector(".temp").textContent = `${Math.round(data.main.temp)}°C`;
         document.querySelector(".humidity").textContent = `%${data.main.humidity}`;
         document.querySelector(".wind").textContent = `${data.wind.speed} km/h`;
