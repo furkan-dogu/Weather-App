@@ -22,6 +22,7 @@ const checkWeather = async (city) => {
 
         document.querySelector(".city").textContent = `${data.name}, ${data.sys.country}`;
         document.querySelector(".temp").textContent = `${Math.round(data.main.temp)}°C`;
+        document.querySelector(".felt-temp").textContent = `Felt Temperature: ${Math.round(data.main.feels_like)}°C`;
         document.querySelector(".humidity").textContent = `%${data.main.humidity}`;
         document.querySelector(".wind").textContent = `${data.wind.speed} km/h`;
 

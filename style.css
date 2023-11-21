@@ -55,15 +55,18 @@ body {
 }
 
 .temp {
-    font-size: 5rem;
+    font-size: 4.5rem;
     font-weight: 500;
     margin-top: -1rem;
+}
+
+.felt-temp{
+    font-weight: 400;
 }
 
 .city {
     font-size: 3rem;
     font-weight: 400;
-    margin-top: -1rem;
 }
 
 .details {
@@ -99,6 +102,11 @@ body {
 
     .temp {
         font-size: 3.5rem;
+    }
+
+    .felt-temp{
+        font-size: .9rem;
+        margin: -.5rem 0 .5rem;
     }
 
     .city {
