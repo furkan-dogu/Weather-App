@@ -20,10 +20,10 @@ const checkWeather = async (city) => {
             data.name = data.name.replace("Province", "").trim();
         }
 
-        document.querySelector(".city").textContent = `${data.name}, ${data.sys.country}`;
+        document.querySelector(".city").textContent = `${data.name} - ${data.sys.country}`;
         document.querySelector(".temp").textContent = `${Math.round(data.main.temp)}°C`;
         document.querySelector(".felt-temp").textContent = `Felt Temperature: ${Math.round(data.main.feels_like)}°C`;
-        document.querySelector(".humidity").textContent = `%${data.main.humidity}`;
+        document.querySelector(".humidity").textContent = `${data.main.humidity}%`;
         document.querySelector(".wind").textContent = `${data.wind.speed} km/h`;
 
         if (data.weather[0].main == "Clouds") {
@@ -42,7 +42,16 @@ const checkWeather = async (city) => {
 };
 
 searchBtn.addEventListener("click", () => {
-    checkWeather(searchInput.value)
+    const cityName = searchInput.value.trim();
+    checkWeather(cityName)
+    if(!cityName) {
+        Swal.fire({
+            text: "Please enter a valid city name",
+            icon: "warning",
+            showConfirmButton: false,
+            timer: 1000
+        });
+    }
 });
 
 searchLocation.addEventListener("click", () => {
