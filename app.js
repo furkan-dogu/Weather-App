@@ -6,6 +6,7 @@ const searchBtn = document.getElementById("btn");
 const searchLocation = document.getElementById("location");
 const weatherImg = document.querySelector(".weather-img");
 const weatherDiv = document.querySelector(".weather");
+const errordiv = document.querySelector(".not-found")
 
 let cities = [];
 
@@ -16,6 +17,12 @@ const checkWeather = async (city) => {
         const data = await res.json();
         console.log(data);
         cities = data;
+
+        if(data.cod == "404") {
+            errordiv.style.display = "block"
+            weatherDiv.style.display = "none";
+        }
+
         if (data.name.includes("Province")) {
             data.name = data.name.replace("Province", "").trim();
         }
@@ -39,14 +46,17 @@ const checkWeather = async (city) => {
         }
 
         weatherDiv.style.display = "block";
+        errordiv.style.display = "none"
 };
 
 searchBtn.addEventListener("click", () => {
     const cityName = searchInput.value.trim();
     checkWeather(cityName)
     if(!cityName) {
+        weatherDiv.style.display = "none";
+        errordiv.style.display = "none"
         Swal.fire({
-            text: "Please enter a valid city name",
+            text: "Please enter a valid location",
             icon: "warning",
             showConfirmButton: false,
             timer: 1000

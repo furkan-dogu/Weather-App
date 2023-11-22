@@ -93,6 +93,24 @@ body {
     font-size: 1.5rem;
 }
 
+.not-found {
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
+    display: none;
+}
+
+.not-found img {
+    width: 80%;
+}
+
+.not-found p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    color: whitesmoke;
+}
+
 @media screen and (max-width: 792px) {
     .card {
         margin: 4rem auto;
