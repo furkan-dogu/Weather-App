@@ -27,6 +27,10 @@ const checkWeather = async (city) => {
             data.name = data.name.replace("Province", "").trim();
         }
 
+        if (data.name.includes("City of")) {
+            data.name = data.name.replace("City of", "").trim();
+        }
+
         document.querySelector(".city").textContent = `${data.name} - ${data.sys.country}`;
         document.querySelector(".temp").textContent = `${Math.round(data.main.temp)}°C`;
         document.querySelector(".felt-temp").textContent = `Felt Temperature: ${Math.round(data.main.feels_like)}°C`;
