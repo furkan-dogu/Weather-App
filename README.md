@@ -20,9 +20,9 @@ You can access the live version of the project [here](https://weather-app-furkan
 
 
 <div align="center">
-  <img src="https://github.com/furkan-dogu/Weather-App/blob/main/assets/Screenshot_1.jpg"  width="33%" height="400" />
-  <img src="https://github.com/furkan-dogu/Weather-App/blob/main/assets/Screenshot_2.jpg"  width="33%" height="400" />
-  <img src="https://github.com/furkan-dogu/Weather-App/blob/main/assets/Screenshot_3.jpg"  width="33%" height="400" />
+  <img src="https://github.com/furkan-dogu/Weather-App/blob/main/assets/Screenshot_1.jpg"  width="30%" height="400" />
+  <img src="https://github.com/furkan-dogu/Weather-App/blob/main/assets/Screenshot_2.jpg"  width="30%" height="400" />
+  <img src="https://github.com/furkan-dogu/Weather-App/blob/main/assets/Screenshot_3.jpg"  width="30%" height="400" />
 </div>
 
 
