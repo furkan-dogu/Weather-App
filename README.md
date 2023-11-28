@@ -1,3 +1,8 @@
+<div align="center">
+  <img src="https://github.com/furkan-dogu/Weather-App/blob/main/assets/weather-app.gif" />
+</div>
+
+
 # Weather App
 
 This weather application is a simple web app that allows users to view weather information. After entering a location name, the application fetches real-time weather data using the OpenWeatherMap API and displays it on the screen.
@@ -13,11 +18,6 @@ You can access the live version of the project [here](https://weather-app-furkan
 3. When weather information is successfully retrieved, it will be displayed on the screen. If the location is not found, an appropriate error message will be shown.
 
 ## Screenshots
-
-<div align="center">
-  <img src="https://github.com/furkan-dogu/Weather-App/blob/main/assets/weather-app.gif" />
-</div>
-
 
 <div align="center">
   <img src="https://github.com/furkan-dogu/Weather-App/blob/main/assets/Screenshot_1.jpg"  width="30%" height="400" />
